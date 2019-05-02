@@ -23,7 +23,8 @@ app.use(routes);
 
 // Checking where the mongoose server is hosted; externally or locally.
 mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost/googlebooks",
+  process.env.MONGODB_URI ||
+    "mongodb://meamuser:1amused@ds151076.mlab.com:51076/heroku_r36h66t1",
   {
     useCreateIndex: true,
     useNewUrlParser: true
